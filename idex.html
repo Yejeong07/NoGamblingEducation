@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Don’t Gamble!!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Don’t Gamble!!</h1>
+    <p>도박의 위험성을 배우고 예방하는 퀴즈 게임</p>
+  </header>
+
+  <main>
+    <section id="quiz-container">
+      <!-- 퀴즈 질문 -->
+      <div id="question-box">
+        <h2 id="question">질문이 표시됩니다</h2>
+      </div>
+
+      <!-- 선택지 -->
+      <div id="options">
+        <button class="option-btn" data-index="0"></button>
+        <button class="option-btn" data-index="1"></button>
+        <button class="option-btn" data-index="2"></button>
+        <button class="option-btn" data-index="3"></button>
+      </div>
+
+      <!-- 진행 상태 -->
+      <div id="quiz-status">
+        <p>현재 질문: <span id="current-question">1</span>/<span id="total-questions"></span></p>
+      </div>
+    </section>
+
+    <!-- 결과 화면 -->
+    <section id="result-container" style="display: none;">
+      <h2>결과</h2>
+      <p id="score"></p>
+      <button id="restart-btn">다시 시작</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Don’t Gamble!! | 청소년 도박 예방</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
